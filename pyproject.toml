@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portfolio-file-organizer"
+version = "1.0.0"
+description = "A safe dry-run-first file organizer CLI."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Serhii" }]
+keywords = ["files", "automation", "cli", "organizer"]
+
+[project.scripts]
+file-organizer = "file_organizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
